@@ -1,9 +1,0 @@
----
-title: "First Post"
-author: "Stephen Coley"
-date: "2023-09-18"
-categories: [news, code, analysis]
-image: "image.jpg"
----
-
-This is a site about my senior project in fall of 2023

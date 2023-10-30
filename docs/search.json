@@ -11,14 +11,14 @@
     "href": "index.html",
     "title": "50und.github.io",
     "section": "",
-    "text": "news\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nSep 18, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nSep 15, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "news\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nSep 18, 2023\n\n\nStephen Coley\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nSep 15, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post-with-code/index.html",
     "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "title": "Time series classification using catboost",
     "section": "",
-    "text": "This is a post with executable code."
+    "text": "we have imbalanced data, we want to know if the market will move up, down or sideways maybe talk about how we selected days, how granular the data is"
   },
   {
     "objectID": "posts/welcome/index.html",
