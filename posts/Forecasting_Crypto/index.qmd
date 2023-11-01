@@ -9,13 +9,14 @@ image: "image.jpg"
 ## some changes
 
 ## The problem
- 
 
 ## Imbalanced data
+
 from 700k rows we end up with 
 weights
 
 ## Don't Shuffle
+
 Using kfold with shuffling the training and testing scores were nearly identical. Setting shuffle to false fixed this issue. 
 
 we have imbalanced data, we want to know if the market will move up, down or sideways
