@@ -14,11 +14,25 @@
     "text": "news\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nSep 18, 2023\n\n\nStephen Coley\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nSep 15, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Time series classification using catboost",
-    "section": "",
-    "text": "we have imbalanced data, we want to know if the market will move up, down or sideways maybe talk about how we selected days, how granular the data is"
+    "objectID": "posts/Forecasting_Crypto/index.html#the-problem",
+    "href": "posts/Forecasting_Crypto/index.html#the-problem",
+    "title": "Forecasting Crypto Volatility Using Catboost",
+    "section": "The problem",
+    "text": "The problem"
+  },
+  {
+    "objectID": "posts/Forecasting_Crypto/index.html#imbalanced-data",
+    "href": "posts/Forecasting_Crypto/index.html#imbalanced-data",
+    "title": "Forecasting Crypto Volatility Using Catboost",
+    "section": "Imbalanced data",
+    "text": "Imbalanced data\nfrom 700k rows we end up with weights"
+  },
+  {
+    "objectID": "posts/Forecasting_Crypto/index.html#dont-shuffle",
+    "href": "posts/Forecasting_Crypto/index.html#dont-shuffle",
+    "title": "Forecasting Crypto Volatility Using Catboost",
+    "section": "Don’t Shuffle",
+    "text": "Don’t Shuffle\nUsing kfold with shuffling the training and testing scores were nearly identical. Setting shuffle to false fixed this issue.\nwe have imbalanced data, we want to know if the market will move up, down or sideways maybe talk about how we selected days, how granular the data is"
   },
   {
     "objectID": "posts/welcome/index.html",

@@ -9,7 +9,7 @@
 <meta name="author" content="Stephen Coley">
 <meta name="dcterms.date" content="2023-09-18">
 
-<title>50und.github.io - Time series classification using catboost</title>
+<title>50und.github.io - Forecasting Crypto Volatility Using Catboost</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Time series classification using catboost</h1>
+      <h1 class="title">Forecasting Crypto Volatility Using Catboost</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">news</div>
                 <div class="quarto-category">code</div>
@@ -138,9 +138,23 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<section id="some-changes" class="level2">
+<h2 class="anchored" data-anchor-id="some-changes">some changes</h2>
+</section>
+<section id="the-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem">The problem</h2>
+</section>
+<section id="imbalanced-data" class="level2">
+<h2 class="anchored" data-anchor-id="imbalanced-data">Imbalanced data</h2>
+<p>from 700k rows we end up with weights</p>
+</section>
+<section id="dont-shuffle" class="level2">
+<h2 class="anchored" data-anchor-id="dont-shuffle">Don’t Shuffle</h2>
+<p>Using kfold with shuffling the training and testing scores were nearly identical. Setting shuffle to false fixed this issue.</p>
 <p>we have imbalanced data, we want to know if the market will move up, down or sideways maybe talk about how we selected days, how granular the data is</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
