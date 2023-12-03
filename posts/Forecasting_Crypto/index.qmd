@@ -5,12 +5,15 @@ date: "2023-09-18"
 categories: [news, code, analysis]
 image: "image.jpg"
 ---
-Idk man, at this point I'd just like it to render
+
 
 ## some changes
 
 ```{python}
-
+import pandas as pd
+import shap
+dat = pd.read_csv('https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/housing.csv')
+dat.head()
 ```
 
 ## The problem
