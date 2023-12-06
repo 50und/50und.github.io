@@ -9,6 +9,7 @@ website:
       - about.qmd
       - icon: github
         href: https://github.com/50und
+
 format:
   html:
     theme: cosmo
