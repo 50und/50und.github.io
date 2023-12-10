@@ -7,13 +7,51 @@ image: "image.jpg"
 ---
 
 
-## some changes
+## 
 
 ```{python}
 import pandas as pd
 import shap
+import numpy as np
+
 dat = pd.read_csv('https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/housing.csv')
 dat.head()
+dat['date'] = pd.to_datetime(dat['date'])
+dat = dat.drop(columns = ['id', 'zipcode', 'lat', 'long', 'date'], axis = 1)
+```
+
+```{python}
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import KFold, cross_val_score
+
+# prep data
+y = dat['price']
+X = dat.drop(columns = 'price', axis = 1)
+
+forest = RandomForestRegressor(n_estimators=100, max_depth=10)
+
+# scores=[]
+# kFold=KFold(n_splits=10,shuffle=False)
+
+# cv = cross_val_score(forest, X, y, cv=10)
+# print(np.mean(cv))
+
+forest.fit(X,y)
+```
+
+```{python}
+#| eval: false
+
+explainer = shap.TreeExplainer(forest)
+shap_values = explainer.shap_values(X)
+
+shap.summary_plot(shap_values, X, plot_type="bar")
+```
+
+```{python}
+#| eval: false
+for i in range(0, len(X.columns)):
+    shap.dependence_plot(i, shap_values, X)
 ```
 
 ## The problem
