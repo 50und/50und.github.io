@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "50und.github.io",
     "section": "",
-    "text": "Forecasting Crypto Volatility Using Catboost\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nSep 18, 2023\n\n\nStephen Coley\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nSep 15, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Using Shap Values to Explain Tree Models\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nSep 18, 2023\n\n\nStephen Coley\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nSep 15, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -26,34 +26,6 @@
     "title": "Forecasting Crypto Volatility Using Catboost",
     "section": "",
     "text": "import pandas as pd\nimport shap\nimport numpy as np\n\ndat = pd.read_csv('https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/housing.csv')\ndat.head()\ndat['date'] = pd.to_datetime(dat['date'])\ndat = dat.drop(columns = ['id', 'zipcode', 'lat', 'long', 'date'], axis = 1)\n\n\nfrom sklearn.ensemble import RandomForestRegressor\nfrom sklearn.model_selection import KFold, cross_val_score\n\n# prep data\ny = dat['price']\nX = dat.drop(columns = 'price', axis = 1)\n\nforest = RandomForestRegressor(n_estimators=100, max_depth=10)\n\n# scores=[]\n# kFold=KFold(n_splits=10,shuffle=False)\n\n# cv = cross_val_score(forest, X, y, cv=10)\n# print(np.mean(cv))\n\nforest.fit(X,y)\n\nRandomForestRegressor(max_depth=10)In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.RandomForestRegressorRandomForestRegressor(max_depth=10)\n\n\n\nexplainer = shap.TreeExplainer(forest)\nshap_values = explainer.shap_values(X)\n\nshap.summary_plot(shap_values, X, plot_type=\"bar\")\n\n\nfor i in range(0, len(X.columns)):\n    shap.dependence_plot(i, shap_values, X)"
-  },
-  {
-    "objectID": "posts/Forecasting_Crypto/index.html#some-changes",
-    "href": "posts/Forecasting_Crypto/index.html#some-changes",
-    "title": "Forecasting Crypto Volatility Using Catboost",
-    "section": "some changes",
-    "text": "some changes"
-  },
-  {
-    "objectID": "posts/Forecasting_Crypto/index.html#the-problem",
-    "href": "posts/Forecasting_Crypto/index.html#the-problem",
-    "title": "Forecasting Crypto Volatility Using Catboost",
-    "section": "The problem",
-    "text": "The problem"
-  },
-  {
-    "objectID": "posts/Forecasting_Crypto/index.html#imbalanced-data",
-    "href": "posts/Forecasting_Crypto/index.html#imbalanced-data",
-    "title": "Forecasting Crypto Volatility Using Catboost",
-    "section": "Imbalanced data",
-    "text": "Imbalanced data\nfrom 700k rows we end up with weights"
-  },
-  {
-    "objectID": "posts/Forecasting_Crypto/index.html#dont-shuffle",
-    "href": "posts/Forecasting_Crypto/index.html#dont-shuffle",
-    "title": "Forecasting Crypto Volatility Using Catboost",
-    "section": "Don’t Shuffle",
-    "text": "Don’t Shuffle\nUsing kfold with shuffling the training and testing scores were nearly identical. Setting shuffle to false fixed this issue.\nwe have imbalanced data, we want to know if the market will move up, down or sideways maybe talk about how we selected days, how granular the data is"
   },
   {
     "objectID": "posts/Forecasting_Crypto/index.html#here",
