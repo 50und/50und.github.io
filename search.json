@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "50und.github.io",
-    "section": "",
-    "text": "Using Shap Values to Explain Tree Models\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nDec 11, 2023\n\n\nStephen Coley\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nSep 15, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
-  },
-  {
     "objectID": "posts/Forecasting_Crypto/index.html",
     "href": "posts/Forecasting_Crypto/index.html",
     "title": "Using Shap Values to Explain Tree Models",
@@ -54,5 +33,19 @@
     "title": "Using Shap Values to Explain Tree Models",
     "section": "Conclusion",
     "text": "Conclusion\nShap values allow you to dig into your machine learning models and gain an understanding of how they are using your features. This leads to much more understandable and therefore more useful models. I encourage the use of shap values in your next machine learning project."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I am a recent graduate of BYUI’s BS in Data Science. I use this blog to discuss topics in machine learning/data science."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "50und.github.io",
+    "section": "",
+    "text": "Using Shap Values to Explain Tree Models\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nDec 11, 2023\n\n\nStephen Coley\n\n\n\n\n\n\nNo matching items"
   }
 ]
