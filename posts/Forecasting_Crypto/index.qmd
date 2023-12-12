@@ -1,7 +1,7 @@
 ---
 title: "Using Shap Values to Explain Tree Models"
 author: "Stephen Coley"
-date: "2023-09-18"
+date: "2023-12-11"
 categories: [news, code, analysis]
 image: "image.jpg"
 ---
@@ -13,6 +13,7 @@ Machine learning models have a reputation for being "black boxes." This is a pro
 To demonstrate, I trained a random forest regression model on the housing dataset. For the sake of making this a simple demonstration, I only kept numeric features in the dataset, and trained the model on all the data instead of doing a train test validation approach.
 
 ```{python}
+#| eval: false
 import pandas as pd
 import shap
 import numpy as np
@@ -24,6 +25,7 @@ dat = dat.drop(columns = ['id', 'zipcode', 'lat', 'long', 'date'], axis = 1)
 ```
 
 ```{python}
+#| eval: false
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import KFold, cross_val_score
 
